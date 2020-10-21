@@ -1,4 +1,6 @@
-"""Part 2"""
+#Part 2
+#link to github repo: https://github.com/akashjorss/Greenhouse_emissions_viz
+
 import pandas as pd
 import streamlit as st
 import altair as alt

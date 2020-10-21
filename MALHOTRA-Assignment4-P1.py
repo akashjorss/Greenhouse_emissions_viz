@@ -1,4 +1,5 @@
 # Part 1 of Assignmnent 4:
+# link to github repo: https://github.com/akashjorss/Greenhouse_emissions_viz
 # Create Visualization
 import pandas as pd
 import streamlit as st
@@ -39,7 +40,7 @@ area_chart = alt.Chart(data[data.VAR == 'TOTAL']).mark_area(
 	).encode(
 	alt.X('Year:O', title="Year"),
 	alt.Y('Value:Q', title="Emission value (in Tonnes of CO2 equivalent)"),
-	alt.Color('Country:N', legend=None),
+	alt.Color('Country:N', legend=None, scale=alt.Scale(scheme='tableau20')),
 	alt.Tooltip('Country:N'),
 	#alt.Order('Value:Q', sort='descending') #encode value with saturation
 	).properties(
