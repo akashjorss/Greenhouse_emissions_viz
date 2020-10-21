@@ -2,7 +2,7 @@
 import pandas as pd
 import streamlit as st
 import altair as alt
-data = pd.read_csv("green_house.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/akashjorss/Greenhouse_emissions_viz/master/green_house.csv")
 
 
 #A slider filter for year
